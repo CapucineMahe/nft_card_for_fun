@@ -1,0 +1,149 @@
+/* Elements principaux de la page */
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  max-width: 1200px;
+}
+
+a  /* supprime le soulignement et la couleur violette des textes cliquables */ {
+  text-decoration: none;
+  color: grey;
+}
+
+.globale_card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem 1rem;
+}
+
+.img_principale {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  margin-left: 1rem;
+}
+
+.img_owner {
+  width: 20%;
+  border-radius: 4rem;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+}
+
+.bloc_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0.8rem 0 1rem;
+}
+
+.creation_of {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.creation_of p {
+  margin-left: 1rem;
+  font-size: 0.85em;
+}
+
+/* nouvelles règles si mon site est consulté sur un écran de tablette */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .globale_card {
+    width: 60%;
+  }
+
+  h1,
+  h2 {
+    margin: 5% 7%;
+    font-size: 1.2rem;
+  }
+  .bloc_1 p {
+    margin: 1rem 0.8rem 2rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .creation_of p {
+    font-size: 0.85em;
+  }
+}
+
+/* nouvelles règles si mon site est consulté sur un écran desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .globale_card {
+    width: 40%;
+  }
+  h1,
+  h2 {
+    margin: 5% 7%;
+    font-size: 1.4rem;
+  }
+  .bloc_1 p {
+    margin: 1rem 0.8rem 2rem 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .creation_of p {
+    font-size: 1.3em;
+  }
+}
+
+/* nouvelles règles si mon site est consulté sur un écran desktop ++ */
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+  .globale_card {
+    width: 40%;
+  }
+  h1,
+  h2 {
+    margin: 5% 7%;
+    font-size: 1.4rem;
+  }
+  .bloc_1 p {
+    margin: 1rem 0.8rem 2rem 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .creation_of p {
+    font-size: 1.3em;
+  }
+
+  .img_owner {
+    margin-left: 0.5rem;
+    width: 15%;
+    border-radius: 8rem;
+  }
+}
+
